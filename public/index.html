@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Creation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
-    <section class="grid grid-cols-1 gap-6 mt-auto">
 
-        <form action="" method="get" >
+    <section class="container">
+
+        <form action="" method="get" class="grid grid-cols-1 gap-6 mt-auto" >
             <label for="" class="block">
                 <span class="text-gray-700">Select Race</span>
-                <select name="" id="" class="block mt-0 px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black">
-                    <option value="">Test 1</option>
-                    <option value="">Test 1</option>
-                    <option value="">Test 1</option>
-                    <option value="">Test 1</option>
+                <select name="" id="races" class="block mt-0 px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black">
+                    
                 </select>
             </label>
         </form>
     </section>
 
 
-    <script src="../public/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
