@@ -25,3 +25,8 @@ fetch(`${url}/races/`, {method: 'GET'})
         })
     })
 
+fetch(`${url}/classes/`, {method: 'GET'})
+    .then( results => results.json())
+    .then( data => {
+        console.log(data)
+    })
