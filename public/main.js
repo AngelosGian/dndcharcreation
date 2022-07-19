@@ -38,5 +38,11 @@ fetch(`${url}/classes/`, {method: 'GET'})
             option.text = elem.name
             option.value= elem.index
             classes.appendChild(option)
+            // I need to add the specific characteristics of the classes
+            // so fetch from url/classes/class 
+            // fetch(`${url}/classes/${option.value}`, {method: 'GET'})
+            // when I choose a class and it will brink me those characteristics
+        
         })
     })    
+
