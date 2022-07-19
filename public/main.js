@@ -28,5 +28,15 @@ fetch(`${url}/races/`, {method: 'GET'})
 fetch(`${url}/classes/`, {method: 'GET'})
     .then( results => results.json())
     .then( data => {
-        console.log(data)
-    })
+        console.log(data);
+        const classes = document.querySelector('#classes');
+        data.results.map(elem => {
+            console.log(elem.name)
+            const option =document.createElement('option');
+            // console.log(typeof elem.name )
+            // races.appendChild(option).innerText = elem.title
+            option.text = elem.name
+            option.value= elem.index
+            classes.appendChild(option)
+        })
+    })    
