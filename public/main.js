@@ -72,3 +72,9 @@ fetch(`${url}/alignments/`, {method: 'GET'})
             
         })
     })    
+    let btn = document.querySelector('#data-send');
+    btn.addEventListener("click", (e) =>{
+        e.preventDefault();
+
+        console.log(e)
+    })
