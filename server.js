@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const cors = require('cors');
+// const cors = require('cors');
 // const PORT = 3003
 const env = require('dotenv');
-
 env.config({ path: './config/.env' });
 
-app.use(cors())
+
+app.use('/', express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
