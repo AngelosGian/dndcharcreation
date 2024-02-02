@@ -7,10 +7,10 @@ fetch(`${url}/races/`, {method: 'GET'})
         // console.log(result)
         let races = document.querySelector('#races');
         result.results.map(elem => {
-            // console.log(elem.name)
+            console.log(elem.name)
             const option =document.createElement('option');
             // console.log(typeof elem.name )
-            // races.appendChild(option).innerText = elem.title
+            races.appendChild(option).innerText = elem.title
             option.text = elem.name
             option.value= elem.index
             races.appendChild(option)

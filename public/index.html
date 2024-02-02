@@ -1,78 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Creation</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/output.css" /> -->
-    
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Character Creation</title>
+		<link
+			rel="stylesheet"
+			href="./css/reset.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet" />
+		<!-- <link rel="stylesheet" href="./css/output.css" /> -->
+	</head>
+	<body>
+		<section class="container">
+			<div class="row">
+				<form
+					action=""
+					method="get"
+					class="grid grid-cols-1 gap-6 mt-auto">
+					<label
+						for="races"
+						class="form-label">
+						Select Race
+						<select
+							name=""
+							id="races"
+							class="form-control">
+							<!-- <option value="">Select a race</option> -->
+						</select>
+					</label>
 
-</head>
-<body>
+					<label
+						for="classes"
+						class="form-label">
+						Select Class
+						<select
+							name=""
+							id="classes"
+							class="form-control">
+							<!-- <option value="">Select a Class</option> -->
+						</select>
+					</label>
+					<label
+						for="alignments"
+						class="form-label">
+						Select Alignment
+						<select
+							name=""
+							id="alignments"
+							class="form-control">
+							<!-- <option value="">Select an Alignment</option> -->
+						</select>
+					</label>
 
-    <section class="container">
-        <div class="row">
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="strength"
+							>Strength</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="strength"
+							id="strength"
+							placeholder="Strength" />
+					</div>
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="dexterity"
+							>Dexterity</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="dexterity"
+							id="dexterity"
+							placeholder="Dexterity" />
+					</div>
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="constitution"
+							>Constitution</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="constitution"
+							id="constitution"
+							placeholder="Constitution" />
+					</div>
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="intelligent"
+							>Intelligent</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="intelligent"
+							id="intelligent"
+							placeholder="Intelligent" />
+					</div>
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="wisdom"
+							>Wisdom</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="wisdom"
+							id="wisdom"
+							placeholder="Wisdom" />
+					</div>
+					<div class="mb-3">
+						<label
+							class="form-label"
+							for="charisma"
+							>Charisma</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							name="charisma"
+							id="charisma"
+							placeholder="Charisma" />
+					</div>
+					<button
+						id="data-send"
+						type="submit">
+						Send
+					</button>
+				</form>
+			</div>
+		</section>
 
-            <form action="" method="get" class="grid grid-cols-1 gap-6 mt-auto" >
-                <label for="races" class="form-label">
-                    Select Race
-                    <select name="" id="races" class="form-control">
-                        <!-- <option value="">Select a race</option> -->
-                    </select>
-                </label>
-                
-                <label for="classes" class="form-label">
-                    Select Class
-                    <select name="" id="classes" class="form-control">
-                        <!-- <option value="">Select a Class</option> -->
-                    </select>
-                </label>
-                <label for="alignments" class="form-label">
-                    Select Alignment
-                    <select name="" id="alignments" class="form-control">
-                        <!-- <option value="">Select an Alignment</option> -->
-                    </select>
-                </label>
-                
-                <div class="mb-3">
-                    <label class="form-label" for="strength">Strength</label>
-                    <input type="text" class="form-control" name="strength" id="strength" placeholder="Strength">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="dexterity">Dexterity</label>
-                    <input type="text" class="form-control" name="dexterity" id="dexterity" placeholder="Dexterity">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="constitution">Constitution</label>
-                    <input type="text" class="form-control" name="constitution" id="constitution" placeholder="Constitution">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="intelligent">Intelligent</label>
-                    <input type="text" class="form-control" name="intelligent" id="intelligent" placeholder="Intelligent">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="wisdom">Wisdom</label>
-                    <input type="text" class="form-control" name="wisdom" id="wisdom" placeholder="Wisdom">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="charisma">Charisma</label>
-                    <input type="text" class="form-control" name="charisma" id="charisma" placeholder="Charisma">
-                </div>
-                <button id="data-send" type="submit">Send</button>
-            </form>
-        </div>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        
-    </section>
-
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    
-    <script src="./main.js"></script>
-</body>
+		<script src="./js/main.js"></script>
+	</body>
 </html>
