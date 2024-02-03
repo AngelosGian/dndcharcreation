@@ -1,11 +1,12 @@
 const url = 'https://www.dnd5eapi.co/api'
-
+const races = document.querySelector('#races');
+const classes = document.querySelector('#classes');
+const alignments = document.querySelector('#alignments');
 
 fetch(`${url}/races/`, {method: 'GET'})
     .then(result => result.json())
     .then(result => {
         // console.log(result)
-        let races = document.querySelector('#races');
         result.results.map(elem => {
             console.log(elem.name)
             const option =document.createElement('option');
@@ -29,7 +30,7 @@ fetch(`${url}/classes/`, {method: 'GET'})
     .then( results => results.json())
     .then( data => {
         // console.log(data);
-        const classes = document.querySelector('#classes');
+
         data.results.map(elem => {
             // console.log(elem.name)
             const option =document.createElement('option');
@@ -50,7 +51,7 @@ fetch(`${url}/alignments/`, {method: 'GET'})
     .then( results => results.json())
     .then( data => {
         // console.log(data);
-        const alignments = document.querySelector('#alignments');
+      
         data.results.map(elem => {
             // console.log(elem.name)
             const option =document.createElement('option');
@@ -71,4 +72,7 @@ fetch(`${url}/alignments/`, {method: 'GET'})
         e.preventDefault();
 
         console.log(e)
+        localStorage.setItem('races', JSON.stringify(races.value));
+        localStorage.setItem('classes', JSON.stringify(classes.value));
+
     })
