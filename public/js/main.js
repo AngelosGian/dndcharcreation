@@ -75,12 +75,12 @@ fetch(`${url}/features/`, {method: 'GET'})
       
         data.results.map(elem => {
             // console.log(elem.name)
-            const option =document.createElement('option');
+            const paragraph =document.createElement('p');
             // console.log(typeof elem.name )
             // races.appendChild(option).innerText = elem.title
-            option.text = elem.name
-            option.value= elem.index
-            features.appendChild(option)
+            paragraph.text = elem.name
+            paragraph.value= elem.index
+            features.appendChild(paragraph)
             // I need to add the specific characteristics of the classes
             // so fetch from url/classes/class 
             // fetch(`${url}/classes/${option.value}`, {method: 'GET'})
