@@ -80,7 +80,7 @@ fetch(`${url}/features/`, {method: 'GET'})
             // races.appendChild(option).innerText = elem.title
             option.text = elem.name
             option.value= elem.index
-            alignments.appendChild(option)
+            features.appendChild(option)
             // I need to add the specific characteristics of the classes
             // so fetch from url/classes/class 
             // fetch(`${url}/classes/${option.value}`, {method: 'GET'})
